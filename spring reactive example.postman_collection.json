@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d2e968e5-3647-4668-93a1-0cb0351b4503",
+		"name": "spring reactive example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "reactve get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4500/course/sse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"course",
+						"sse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Outdoor Bootcamp11\",\r\n    \"description\": \"My description11\",\r\n    \"categoryId\": \"f752298d-a74e-40be-af80-c864db534868\",\r\n    \"createdByUserId\": \"45748044-8041-11eb-9439-0242ac130002\",\r\n    \"duration\": 60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get course",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Outdoor Bootcamp\",\r\n    \"description\": \"My description\",\r\n    \"categoryId\": \"17d928fe-ac2c-4817–84fd-0830766fefb1\",\r\n    \"createdByUserId\": \"02065d66–8f85–4892-af53-a09163a466a6\",\r\n    \"duration\": 60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get course categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Outdoor Bootcamp\",\r\n    \"description\": \"My description\",\r\n    \"categoryId\": \"17d928fe-ac2c-4817–84fd-0830766fefb1\",\r\n    \"createdByUserId\": \"02065d66–8f85–4892-af53-a09163a466a6\",\r\n    \"duration\": 60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/course/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"course",
+						"category"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
